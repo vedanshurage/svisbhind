@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Swami Vivekanand International School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand hover-bounce">
+                <i class="fa-solid fa-graduation-cap" style="color: var(--primary-orange); font-size: 2rem;"></i>
+                SVIS Bhind
+            </a>
+                        <button class="menu-toggle" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="toppers.html">Toppers</a></li>
+                <li><a href="creative.html">Creative Students</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="section-blue wavy-bottom fade-in-scale" style="padding: 80px 0 120px; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3.5rem;">Let's Talk! 📞</h1>
+            <p style="font-size: 1.5rem;">We'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info & Forms -->
+    <section class="section-white" style="padding: 80px 0;">
+        <div class="container">
+            <div class="row">
+                
+                <!-- Contact Information -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="card" style="background-color: var(--primary-yellow); height: 100%;">
+                        <h2 style="color: var(--dark-text); margin-bottom: 30px;">Get in Touch</h2>
+                        <div style="margin-bottom: 20px; font-size: 1.1rem;">
+                            <i class="fa-solid fa-location-dot" style="color: var(--primary-red); width: 30px;"></i>
+                            <strong>Address:</strong><br>
+                            Swami Vivekanand International School,<br>
+                            Bhind, Madhya Pradesh, India
+                        </div>
+                        <div style="margin-bottom: 20px; font-size: 1.1rem;">
+                            <i class="fa-solid fa-phone" style="color: var(--primary-blue); width: 30px;"></i>
+                            <strong>Phone:</strong><br>
+                            +91 62690 31658
+                        </div>
+                        <div style="margin-bottom: 20px; font-size: 1.1rem;">
+                            <i class="fa-solid fa-envelope" style="color: var(--primary-orange); width: 30px;"></i>
+                            <strong>Email:</strong><br>
+                            admissions@svisbhind.edu.in
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry & Appointment Form -->
+                <div class="col-md-8 animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="card">
+                        <h2 style="color: var(--primary-blue); margin-bottom: 20px;" id="appointment">Admission Inquiry & Campus Tour</h2>
+                        <form action="#" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Your Name *</label>
+                                        <input type="text" id="name" class="form-control" required placeholder="Enter your name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="contact_phone">Phone Number *</label>
+                                        <input type="tel" id="contact_phone" class="form-control" required placeholder="62690 31658">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inquiry_type">I want to... *</label>
+                                <select id="inquiry_type" class="form-control" required>
+                                    <option value="">Select Option</option>
+                                    <option value="admission">Inquire about Admission</option>
+                                    <option value="tour">Book a Campus Tour (Appointment)</option>
+                                    <option value="general">General Question</option>
+                                </select>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="date">Preferred Date (for Tour)</label>
+                                        <input type="date" id="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="time">Preferred Time (for Tour)</label>
+                                        <input type="time" id="time" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message / Details</label>
+                                <textarea id="message" class="form-control" rows="4" placeholder="Tell us more about your child or questions..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section class="section-blue wavy-top" style="padding: 100px 0 50px;">
+        <div class="container animate-on-scroll">
+            <h2 style="text-align: center; margin-bottom: 30px;">Find Us on the Map 🗺️</h2>
+            <div style="width: 100%; height: 400px; background-color: #ddd; border-radius: var(--border-radius-lg); display: flex; justify-content: center; align-items: center; border: 5px solid var(--white);">
+                <p style="color: var(--dark-text); font-size: 1.5rem; font-weight: bold;">[ Google Maps Embed Placeholder ]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/916269031658?text=Hello SVIS, I want to inquire about admission." class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Chat with Us!</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>Swami Vivekanand International School</h3>
+            <p>Bhind, Madhya Pradesh</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div style="margin-top: 30px;">
+                <a href="privacy.html" style="margin: 0 10px;">Privacy Policy</a> | 
+                <a href="contact.html" style="margin: 0 10px;">Contact Us</a>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">&copy; 2024 SVIS Bhind. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <!-- SVG Filter for Hand-Drawn / Sketchy Icons -->
+    <svg style="display:none;">
+        <filter id="sketchy">
+            <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise"></feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+        </filter>
+    </svg>
+</body>
+</html>
