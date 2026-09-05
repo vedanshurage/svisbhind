@@ -1,0 +1,53 @@
+
+> tmp_app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 601ms
+✓ Running next.config.ts took 48ms
+
+○ Compiling / ...
+ GET / 200 in 4.3s (next.js: 4.0s, application-code: 300ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <Home params={Promise} searchParams={Promise}>
+      <main className="w-full h-s...">
+        <RandomSurprisePopup>
+        <AnimatePresence mode="wait">
+          <PresenceChild isPresent={true} initial={undefined} custom={undefined} presenceAffectsLayout={true} mode="wait" ...>
+            <PopChild pop={false} isPresent={true} anchorX="left" anchorY="top" root={undefined}>
+              <PopChildMeasure isPresent={true} childRef={{current:null}} sizeRef={{...}} pop={false}>
+                <motion.div initial={{opacity:0, ...}} animate={{opacity:1,scale:1}} exit={{opacity:0, ...}} ...>
+                  <div className="w-full h-full" style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                    <QuestionPage question="Aapko main..." pageIndex={1} onNext={function handleNext}>
+                      <div className="relative w...">
+                        <motion.div>
+                        <motion.div>
+                        <motion.div>
+                        <motion.div className="z-10 flex ..." animate={{x:0,y:0}} transition={{type:"spring", ...}}>
+                          <div className="z-10 flex ..." style={{}} ref={function useMotionRef.useCallback}>
+                            <input
+                              type="text"
+                              value=""
+                              onChange={function onChange}
+                              placeholder="Type your answer here..."
+                              className="w-full p-4 text-center rounded-full border-4 border-purple-200 focus:border-p..."
+-                             style={{caret-color:"transparent"}}
+                            >
+                            ...
+                        ...
+
+[?25h
